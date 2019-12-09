@@ -52,7 +52,7 @@ class Directory extends React.Component {
       <div className='directory-menu'>
         {
           this.state.sections.map(({title, imageUrl, id}) => (
-            <MenuItem key={id} title={title}  />
+            <MenuItem key={id} title={title} imageUrl={imageUrl}  />
           ))
         }
       </div>
@@ -61,3 +61,6 @@ class Directory extends React.Component {
 }
 
 export default Directory;
+
+
+// TODO: change image url using http://i.ibb.co/
