@@ -11,24 +11,28 @@ const HomePage = () => (
           <span className='subtitle'>shop now</span>
         </div>
       </div>
+
       <div className='menu-item'>
         <div className='content'>
           <hi className='title'>JACKETS</hi>
           <span className='subtitle'>shop now</span>
         </div>
       </div>
+
       <div className='menu-item'>
         <div className='content'>
           <hi className='title'>スニーカー</hi>
-          <span className='subtitle'>購入はコチラ</span>
+          <span className='subtitle'>shop now</span>
         </div>
       </div>
+
       <div className='menu-item'>
         <div className='content'>
           <hi className='title'>MENS</hi>
           <span className='subtitle'>shop now</span>
         </div>
       </div>
+
       <div className='menu-item'>
         <div className='content'>
           <hi className='title'>WOMENS</hi>
