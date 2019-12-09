@@ -19,8 +19,8 @@ const HomePage = () => (
       </div>
       <div className='menu-item'>
         <div className='content'>
-          <hi className='title'>SNEAKERS</hi>
-          <span className='subtitle'>shop now</span>
+          <hi className='title'>スニーカー</hi>
+          <span className='subtitle'>購入はコチラ</span>
         </div>
       </div>
       <div className='menu-item'>
@@ -31,7 +31,7 @@ const HomePage = () => (
       </div>
       <div className='menu-item'>
         <div className='content'>
-          <hi className='title'>WOMESN</hi>
+          <hi className='title'>WOMENS</hi>
           <span className='subtitle'>shop now</span>
         </div>
       </div>
