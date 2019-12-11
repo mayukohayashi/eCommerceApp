@@ -37,6 +37,7 @@ class SignIn extends React.Component {
         <span>Emailとパスワードを入力してください</span>
 
         <form onSubmit={this.handleSubmit}>
+
           <FormInput
             name='email'
             type='email'
@@ -54,11 +55,16 @@ class SignIn extends React.Component {
             required
           />
 
-          <CustomButton type='submit'>Sign In</CustomButton>
-          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
-            {' '}
-            Sign in with Google{' '}
-          </CustomButton>
+          <div className='buttons'>
+
+            <CustomButton type='submit'>Sign In</CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+              {' '}
+              Sign in with Google{' '}
+            </CustomButton>
+
+          </div>
+
         </form>
       </div>
     );
