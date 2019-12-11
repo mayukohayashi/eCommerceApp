@@ -30,7 +30,7 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className='sign-in'>
-        <h2>すでにアカウントをお持ちの方はこちら</h2>
+        <h2>アカウントをお持ちの方はこちら</h2>
         <span>Emailとパスワードを入力してください</span>
 
         <form onSubmit={this.handleSubmit}>
