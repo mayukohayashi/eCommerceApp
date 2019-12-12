@@ -32,7 +32,6 @@ class App extends React.Component {
               ...onSnapshot.data()
             }
           });
-          console.log(this.state);
         });
 
       } else {
