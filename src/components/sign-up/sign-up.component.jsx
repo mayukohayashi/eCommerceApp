@@ -3,9 +3,9 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils'
+import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
-import './sign-up.styles.scss'
+import './sign-up.styles.scss';
 
 class SignUp extends React.Component {
   constructor() {
@@ -16,47 +16,50 @@ class SignUp extends React.Component {
       email: '',
       password: '',
       confirmPassword: ''
-    }
+    };
   }
 
   handleSubmit = async event => {
     event.preventDefault();
 
-    const { displayName, email, password, confirmPassword } = this.state
+    const { displayName, email, password, confirmPassword } = this.state;
 
-    if(password !== confirmPassword) {
+    if (password !== confirmPassword) {
       alert('パスワードとパスワード確認が一致していません');
       return;
     }
 
-    try{
-      const { user } = await auth.createUserWithEmailAndPassword(email, password)
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
 
-      await createUserProfileDocument(user, { displayName })
+      await createUserProfileDocument(user, { displayName });
 
       this.setState({
         displayName: '',
         email: '',
         password: '',
         confirmPassword: ''
-      })
+      });
 
     } catch (error) {
       console.error(error)
     }
   };
 
-  handleSubmit = event => {
+  handleChange = event => {
     const { name, value } = event.target;
 
-    this.setState({ [name]: value })
+    this.setState({ [name]: value });
   }
 
   render() {
-    const { displayName, email, password, confirmPassword } = this.state
+    const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div className='sign-up' >
-        <h2 className='title'>アカウントをお持ちでない方はこちら</h2>
+      <div className='sign-up'>
+        <h2 className='title'>I do NOT have an account</h2>
         <span>Email、パスワード、お名前などを登録してください</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
 
@@ -65,7 +68,7 @@ class SignUp extends React.Component {
             name='displayName'
             value={displayName}
             onChange={this.handleChange}
-            label='お名前'
+            label='name'
             required
           />
           <FormInput
@@ -73,7 +76,7 @@ class SignUp extends React.Component {
             name='email'
             value={email}
             onChange={this.handleChange}
-            label='Email'
+            label='email'
             required
           />
           <FormInput
@@ -81,7 +84,7 @@ class SignUp extends React.Component {
             name='password'
             value={password}
             onChange={this.handleChange}
-            label='パスワード'
+            label='password'
             required
           />
           <FormInput
@@ -89,7 +92,7 @@ class SignUp extends React.Component {
             name='confirmPassword'
             value={confirmPassword}
             onChange={this.handleChange}
-            label='パスワード確認'
+            label='confirm password'
             required
           />
           <CustomButton type='submit' >SIGN UP</CustomButton>
@@ -97,7 +100,7 @@ class SignUp extends React.Component {
         </form>
       </div>
 
-    )
+    );
   }
 }
 
