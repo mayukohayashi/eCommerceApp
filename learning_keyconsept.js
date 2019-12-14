@@ -22,3 +22,13 @@ function memoizedAddTo80(n) {
 
 console.log('1' ,memoizedAddTo80(5))
 console.log('2' ,memoizedAddTo80(5))
+
+
+// Note
+CALL FALSE
+0
+false
+undefined
+null
+NaN
+""
