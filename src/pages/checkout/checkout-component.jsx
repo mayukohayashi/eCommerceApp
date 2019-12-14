@@ -4,8 +4,8 @@ import './checkout-styles.scss';
 
 const CheckoutPage = () => (
   <div>
-    お支払い
+    BUY NOW
   </div>
 )
 
-export default CheckoutPage
+export default CheckoutPage;
