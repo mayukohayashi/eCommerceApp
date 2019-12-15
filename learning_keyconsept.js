@@ -33,6 +33,7 @@ null
 NaN
 ""
 
+
 // localStorage and sessionStorage
 const myObjectToStore = {name: 'mayuko'}
 undefined
