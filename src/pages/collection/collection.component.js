@@ -9,8 +9,9 @@ const CollectionPage = ({match}) => {
   return(
     <div className='collection-page'>
       <h1>COLLECTION PAGE</h1>
+
     </div>
-  )
-}
+  );
+};
 
 export default CollectionPage;
