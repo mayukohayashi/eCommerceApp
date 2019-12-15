@@ -32,3 +32,20 @@ undefined
 null
 NaN
 ""
+
+
+// localStorage and sessionStorage
+const myObjectToStore = {name: 'mayuko'}
+undefined
+
+window.localStorage.setItem('myName', JSON.stringify(myObjectToStore))
+undefined
+
+window.localStorage.getItem('myName')
+"{"name":"mayuko"}"
+
+const myRetrievedName = window.localStorage.getItem('myName')
+undefined
+
+JSON.parse(myRetrievedName)
+{name: "mayuko"}
