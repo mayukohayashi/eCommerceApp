@@ -49,3 +49,15 @@ undefined
 
 JSON.parse(myRetrievedName)
 {name: "mayuko"}
+
+
+//  currying
+const multiply = (a, b) => a*b;
+multiply(3, 4)
+
+const curriedMultiply = (a) => (b) => a*b;
+curriedMultiply(5)(6)
+
+const curriedMultiplyBy5 = curriedMultiply(5);
+
+curriedMultiplyBy5(4)
