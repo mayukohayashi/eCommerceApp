@@ -1,0 +1,69 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "window": true,
+        "define": true,
+        "require": true,
+        "module": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "es6": true,
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "babel"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": [ "error", "unix" ],
+        "quotes": [ "error", "single" ],
+        "react/jsx-boolean-value": 0,
+        "react/jsx-closing-bracket-location": 1,
+        "react/jsx-curly-spacing": [2, "always"],
+        "react/jsx-indent-props": [1, 2],
+        "react/jsx-no-undef": 1,
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1,
+        "react/wrap-multilines": 1,
+        "react/react-in-jsx-scope": 1,
+        "react/prefer-es6-class": 1,
+        "react/jsx-no-bind": 1,
+        "arrow-body-style": "error",
+        "arrow-parens": "error",
+        "arrow-spacing": "error",
+        "eqeqeq": "error",
+        "generator-star-spacing": "error",
+        "no-duplicate-imports": "error",
+        "no-eq-null": "error",
+        "no-undefined": "error",
+        "no-useless-computed-key": "error",
+        "no-useless-constructor": "error",
+        "no-useless-rename": "error",
+        "no-var": "error",
+        "object-shorthand": "error",
+        "prefer-arrow-callback": "error",
+        "prefer-const": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "prefer-template": "error",
+        "rest-spread-spacing": "error",
+        "semi": "error",
+        "template-curly-spacing": "error",
+        "yield-star-spacing": "error"
+    }
+}
