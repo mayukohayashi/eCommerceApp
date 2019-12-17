@@ -55,7 +55,6 @@
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "no-var": "error",
-        "object-shorthand": "error",
         "prefer-arrow-callback": "error",
         "prefer-const": "error",
         "prefer-rest-params": "error",
@@ -64,6 +63,19 @@
         "rest-spread-spacing": "error",
         "semi": "error",
         "template-curly-spacing": "error",
-        "yield-star-spacing": "error"
+        "yield-star-spacing": "error",
+        "prettier/prettier": "error",
+        "spaced-comment": "off",
+        "consistent-return": "off",
+        "func-names": "off",
+        "no-console": "off",
+        "object-shorthand": "off",
+        "no-process-exit": "off",
+        "no-param-reassign": "off",
+        "no-return-await": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "prefer-destructuring": ["error", { "object": true, "array": false }],
+        "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
     }
 }
