@@ -1,4 +1,4 @@
-import React from 'react';
+giimport React from 'react';
 
 import Directory from '../../components/directory/directory.component'
 
