@@ -28,13 +28,17 @@ class ShopPage extends React.Component {
     const { updateCollections } = this.props;
     const collectionRef = firestore.collection('collections');
 
-    collectionRef.get().then(
-      this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
-        const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-        updateCollections(collectionsMap);
-        this.setState({loading: false});
-      })
-    )
+    fetch('https://firestore.googleapis.com/v1/projects/stoneshopdb/databases/(default)/documents/collections')
+    .then(response => response.json())
+    .then(collections => console.log(collections))
+
+    // collectionRef.get()
+
+    // this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
+    //   const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+    //   updateCollections(collectionsMap);
+    //   this.setState({loading: false});
+    // })
   }
 
   render() {
