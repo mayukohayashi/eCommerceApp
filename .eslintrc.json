@@ -35,7 +35,13 @@
         "react/jsx-no-bind": 0,
         "react/jsx-boolean-value": 0,
         "react/jsx-closing-bracket-location": 1,
-        "react/jsx-curly-spacing": [2, "always"],
+        "key-spacing": ["error", { "beforeColon": false, "afterColon": true}],
+        // "react/jsx-curly-spacing": ["warn", {
+        //     "when": "never",
+        //     "children": {
+        //     "when": "always"
+        //     }
+        // }],
         "react/jsx-indent-props": [1, 2],
         "react/jsx-no-undef": 1,
         "react/jsx-uses-react": 1,
