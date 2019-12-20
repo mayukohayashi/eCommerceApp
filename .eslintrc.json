@@ -52,7 +52,7 @@
         "react/prefer-es6-class": 1,
         "arrow-spacing": "error",
         "eqeqeq": "error",
-        "generator-star-spacing": "error",
+        "generator-star-spacing": ["error", {"before": false, "after": true}],
         "no-duplicate-imports": "error",
         "no-eq-null": "error",
         "no-undefined": "error",
