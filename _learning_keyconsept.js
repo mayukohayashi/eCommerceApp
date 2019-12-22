@@ -61,3 +61,21 @@ curriedMultiply(5)(6)
 const curriedMultiplyBy5 = curriedMultiply(5);
 
 curriedMultiplyBy5(4)
+
+
+// Array destructuring
+
+const array = [1, 2, 3]
+undefined
+
+const[a, b, c] = array
+
+undefined
+1
+1
+a
+1
+b
+2
+c
+3
