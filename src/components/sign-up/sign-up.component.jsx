@@ -38,7 +38,7 @@ const SignUp = ({ signUpStart }) => {
   return (
     <div className="sign-up">
       <h2 className="title">I do NOT have an account</h2>
-      <span>Email、パスワード、お名前などを登録してください</span>
+      <span>Email、パスワード、お名前を登録してください</span>
       <form className="sign-up-form" onSubmit={handleSubmit}>
         <FormInput
           type="text"
