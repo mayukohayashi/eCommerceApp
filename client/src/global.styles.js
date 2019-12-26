@@ -1,5 +1,17 @@
 import {} from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Open Sans Condensed', 'Kosugi Maru';
+    padding: 20px 60px;
+  }
 
-`
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`;
