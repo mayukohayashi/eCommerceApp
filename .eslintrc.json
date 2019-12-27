@@ -9,6 +9,7 @@
       "eslint:recommended",
       "prettier"
   ],
+  "parser": "babel-eslint",
   "globals": {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly",

@@ -1,4 +1,4 @@
-import React, { useEffect, lazy } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -13,7 +13,7 @@ import { GlobalStyle } from './global.styles';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 
-const HomePage = lazy(() => import('./pages/homepage/homepage.component'))
+const HomePage = lazy(() => import('./pages/homepage/homepage.component'));
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
@@ -25,7 +25,9 @@ const App = ({ checkUserSession, currentUser }) => {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Suspense fallback={<div>loading....</div>}>
+          <Route exact path="/" component={HomePage} />
+        </Suspense>
         <Route path="/shop" component={ShopPage} />
         <Route exact path="/checkout" component={CheckoutPage} />
         <Route
