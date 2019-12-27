@@ -5,6 +5,8 @@ import { createStructuredSelector } from 'reselect';
 
 import { GlobalStyle } from './global.styles';
 
+import Spinner from './components/spinner/spinner.component'
+
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 
@@ -24,7 +26,7 @@ const App = ({ checkUserSession, currentUser }) => {
   return (
     <div>
       <GlobalStyle />
-      <Suspense fallback={<div>loading....</div>}>
+      <Suspense fallback={<Spinner />}>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
