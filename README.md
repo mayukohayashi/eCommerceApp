@@ -1,17 +1,23 @@
-## eCommerseAPP習作
+<a href="https://stoned-shop.herokuapp.com/">
 
-### https://stoned-shop.herokuapp.com/
+🍄STONED SHOP🍄
+======================
 
-- 2019/12/16 1st test deploy
-- 2019/12/22 2nd deploy (Saga, Hooks fetching data from Firebase)
-- 2019/12/23 3rd deploy (Server Side ready for Stripe payment with Node.js)
-- 2019/12/29 4rth deploy (better performance)
+[StonedShop](https://aimeos.org/TYPO3)は、10代20代をターゲットにしたシンプルなデザインのEcommerceウェブアプリケーションです。
 
 
-### Main Technology Stack
-- React
-- Redux
+[![StonedShop](https://i.ibb.co/sQXnZ31/ezgif-com-crop.png)](https://stoned-shop.herokuapp.com/)
+
+## 使用技術
+
+- React 16.12.0
+- Redux 4.0.4
+- Node.js 10.16.3
 - Firebase
-- Google account auth
-- Stripe
 - Heroku
+
+### ポイント
+- React.jsを駆使し、シンプル且つ使いやすいデザインを作る
+- PWAに対応している
+- GoogleAuth
+- Stripesを用い（仮想）決済画面導入
