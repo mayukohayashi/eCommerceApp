@@ -1,10 +1,8 @@
 <a href="https://stoned-shop.herokuapp.com/">
 
-🍄STONED SHOP🍄
-======================
+# 🍄STONED SHOP🍄
 
-[StonedShop](https://aimeos.org/TYPO3)は、10代20代をターゲットにしたシンプルなデザインのEcommerceウェブアプリケーションです。
-
+[StonedShop](https://stoned-shop.herokuapp.com/)は、10 代 20 代をターゲットにしたシンプルなデザインの Ecommerce ウェブアプリケーションです。
 
 [![StonedShop](https://i.ibb.co/sQXnZ31/ezgif-com-crop.png)](https://stoned-shop.herokuapp.com/)
 
@@ -17,7 +15,8 @@
 - Heroku
 
 ### ポイント
-- React.jsを駆使し、シンプル且つ使いやすいデザインを作る
-- PWAに対応している
+
+- React.js を駆使し、シンプル且つ使いやすいデザインを作る
+- PWA に対応している
 - GoogleAuth
-- Stripesを用い（仮想）決済画面導入
+- Stripes を用い（仮想）決済画面導入
